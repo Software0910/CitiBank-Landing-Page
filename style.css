@@ -1,0 +1,1935 @@
+
+
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@500&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+Display&display=swap');
+
+
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+Display&family=Open+Sans:wght@500&display=swap');
+
+
+
+:root {
+    --lg:rgb(211, 211, 211);
+    --ws:rgb(245, 245, 245);
+}
+
+body {
+  background-color:var(--ws);
+  margin:0;
+  line-height: 1.34;
+  overflow-x: hidden;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+
+
+.fb-container {
+    position: relative;
+    font-size: 50px;
+    font-weight: 600;
+    font-family:Roboto;
+    margin-top: 1em;
+    margin-left: 2em;
+    padding: 30px;
+    color: rgba(50, 112, 238, 0.999);
+
+}
+
+.fb-wrapper {
+    position: relative;
+    font-size: 41px;
+    margin-top: -3px;
+    margin-left: -10px;
+    font-family: 'Times New Roman', Times, serif;
+    font-weight: lighter;
+    color:black;
+    padding:10px;
+}
+
+
+.fb-text {
+    position: relative;
+    color:black;
+    font-size: 17px;
+    margin-top: 5px;
+    word-spacing: 2px;
+    font-weight:normal;
+    font-family: SFProText-Regular, Helvetica, Arial, sans-serif;
+}
+
+.fb-image-container {
+   position: relative;
+   border: 1px solid whitesmoke;
+   height:36vh;
+   width:13vw;
+   background-color: gray;
+   margin-left: 8em;
+   margin-top: 2em;
+}
+
+.fb-image-container img {
+    position: absolute;
+    width:13vw;
+    height:29vh
+}
+
+
+.fb-image-container > p {
+    position: absolute;
+    color:black;
+    background-color:white;
+    padding: 0.7em 2em;
+    width:13vw;
+    text-align: center;
+    font-size: 1.6rem;
+    margin-top: 8em;
+    border-radius: 6px;
+    font-weight: 500;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+
+/* x symbol */
+.x-container {
+    position: relative;
+    background-color:rgba(0, 0, 0, 0.025);
+    color:whitesmoke;
+    width:3vw;
+    height:3vh;
+    text-align: center;
+    clip-path: circle(69%);
+    margin-top: -15.8em;
+    margin-left: 7.4em;
+}
+
+/* tooltip */
+.tooltip {
+    position: absolute;
+    display: inline-block;
+    color:white;
+    background-color:black;
+    padding:9px 3px;
+    width: 16%;
+    text-align: center;
+    font-size: 18px;
+    border-radius: 6px;
+    z-index: 1;
+    top:37%;
+    left:8%;;
+    font-family: 'Times New Roman', Times, serif;  
+    border-bottom:1px solid black
+}
+
+.tooltip:after {
+    position: absolute;
+    content: " ";
+    border-color: black transparent transparent transparent;
+    border-style: solid;
+    border-width: 6px;
+    /* center the arrow of the tooltip */
+    top:100%;
+    left:-15%;
+    margin-left: 50px;
+}
+
+
+/* position the one text  */
+.one-text-container {
+    position: relative;
+    margin-top: -47px;
+    margin-left: 310px;
+    width:20%;
+    height:25%;
+  
+}
+
+.one-text-container > p {
+    position: absolute;
+    background-color:red;
+    color:white;
+    text-align: center;
+    font-size: 20px;
+    height:4vh;
+    width:2vw;
+    border-radius:39%;
+    font-family: 'Times New Roman', Times, serif;
+    font-weight: 300
+}
+
+
+.blue-cross-container {
+    position: relative;
+    border: 1px solid lightgray;
+    border-radius: 10px;
+    background-color: whitesmoke;
+    width:13vw;
+    height:31vh;
+    margin-left: 23em;
+    margin-top: 1.2em;
+}
+
+.blue-circle {
+    position: absolute;
+    background-color:rgba(50, 112, 238, 0.999);
+    height: 7vh;
+    width: 1px;
+    clip-path: circle(28%);
+    margin-top: 2.2em;
+    margin-left: 3em;
+    padding: 3.4em;
+}
+
+
+
+/* white cross image : font-awesome */
+.fa-solid {
+    position: absolute;
+    font-size: 40px;
+    transform: rotate(226deg);
+    color:whitesmoke;
+    margin-top: 67px;
+    margin-left: 88px;
+}
+
+
+
+.blue-cross-container > p {
+    position: absolute;
+    background-color:white;
+    color:#0084ff;
+    padding: 22px 6px;
+    width:13vw;
+    font-size: 26px;
+    text-align: center;
+    margin-top: 7.6em;
+    border-radius: 6px;
+    font-weight:500;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+
+form {
+    position: relative;
+    height:28.3em;
+    width:32em;
+    background-color:white;
+    top:-340px;
+    left:900px;
+    border-radius: 3%;
+    padding:4em
+}
+
+#username {
+    position: absolute;
+    width:90%;
+    padding:0.7em;
+    border-radius: 10px;
+    top:6%;
+    left:6%;
+    border: 4px solid whitesmoke;
+    font-size: 1.5em;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+#password {
+    position: absolute;
+    width:90%;
+    padding: 0.7em;
+    border-radius: 10px;
+    border: 4px solid whitesmoke;
+    font-size: 1.5em;
+    font-family: 'Times New Roman', Times, serif;
+    top:28%;
+    left:6%
+}
+
+#username:focus {
+    outline: 4px solid lightblue
+}
+
+#password:focus {
+    outline: 4px solid lightblue
+}
+
+/* log in user a element */
+#log-in-user {
+    position: absolute;
+    width:90%;
+    border-radius:10px;
+    padding:1em;
+    top:48%;
+    left:6%;
+    background-color:  #0084ff;
+    color:white;
+    text-align: center;
+    font-size: 1.3em;
+    font-weight: 900;
+
+}
+
+form a {
+    position: absolute;
+    color:#0084ff;
+    text-decoration: none;
+    font-size: 1.2em;
+    top:69%;
+    left:37%;
+    font-weight: 600;
+}
+
+
+hr {
+    position: absolute;
+    color:whitesmoke;
+    width:89%;
+    margin-top:18.5em;
+    margin-left: -2em;
+}
+
+#create-acct {
+    position: absolute;
+    font-weight: 900;
+    background-color:rgb(28, 177, 28);
+    color:white;
+    padding:0.7em 0em;
+    width:50%;
+    font-size: 1.39em;
+    border-radius:6px;
+    text-align: center;
+    top:83%;
+    left:25%;
+    opacity: 0.8;
+}
+
+#create-acct:hover {
+    background-color:rgb(48, 186, 48)
+}
+
+
+.create-page a {
+    position: absolute;
+    color:black;
+    font-size: 1.2em;
+    font-weight: bold;
+    font-family:'Times New Roman', Times, serif;
+    text-decoration: none;
+    top:93%;
+    left:62%;
+    word-spacing: 0.2px;
+}
+
+.create-page a:hover {
+    text-decoration: underline;
+}
+
+.create-page > p {
+    position: absolute;
+    top:93.1%;
+    left:70%;
+    font-size: 1.2em;
+    margin:0px -6px;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+
+
+
+/* footer section */
+
+footer {
+    position: relative;
+    background-color:white;
+    height: 34vh;
+    width:100vw;
+    margin-top: -50em;
+   
+}
+
+footer  .eng-us {
+    position: absolute;
+    top:3%;
+    left:9%;
+    color:gray;
+    filter: grayscale(90%);
+    font-family: 'Times New Roman', Times, serif;
+    line-height: 1.3em;
+    padding:0.1em;
+    font-size: 1.1em;
+}
+
+
+/* English Section */
+ .Español {
+    position: absolute;
+    color:gray;
+    font-family: 'Times New Roman', Times, serif;
+    filter:grayscale(90%);
+    top:9.4%;
+    left:16%;
+    font-size: 1.1em;
+    text-decoration: none;
+    padding:0.1em
+}
+
+.Español-tooltip {
+    position: absolute;
+    background-color:black;
+    color:white;
+    top:26%;
+    left:19%;
+    z-index: 1;
+    font-family: 'Times New Roman', Times, serif;
+    border-radius:10%;
+    font-size: 1.8vmin;
+    padding:0.1em;
+    visibility: hidden;
+    
+
+}
+
+.Español:hover {
+    text-decoration: underline;
+}
+
+
+
+.Español:hover + .Español-tooltip {
+    visibility: visible;
+    transition: 0.7s ease-in-out;
+    
+}
+
+
+
+
+/* france section */
+
+.Français {
+    position: absolute;
+    color:gray;
+    font-family: 'Times New Roman', Times, serif;
+    filter:grayscale(90%);
+    top:9.4%;
+    left:21%;
+    font-size: 1.1em;
+    text-decoration: none;
+    padding:0.1em
+}
+
+.france-tooltip {
+    position:absolute;
+    background-color:black;
+    color:white;
+    top:26%;
+    left:25%;
+    z-index: 3;
+    font-family: 'Times New Roman', Times, serif;
+    border-radius:10%;
+    font-size: 1.8vmin;
+    padding:0.1em;
+    visibility: hidden;
+}
+
+
+
+.Français:hover {
+    text-decoration: underline;
+}
+
+
+.Français:hover  + .france-tooltip {
+    visibility: visible;
+}
+
+
+
+
+
+/* Chinese Section */
+.chinese {
+    position: absolute;
+    color:gray;
+    font-family: 'Times New Roman', Times, serif;
+    filter:grayscale(90%);
+    top:9.4%;
+    left:30%;
+    font-size: 1.1em;
+    text-decoration: none;
+    padding:0.1em
+}
+
+.chinese-tooltip {
+    position: absolute;
+    background-color:black;
+    color:white;
+    top:26%;
+    left:31%;
+    z-index: 3;
+    font-family: 'Times New Roman', Times, serif;
+    border-radius:10%;
+    font-size: 1.8vmin;
+    padding:0.1em;
+    visibility: hidden;
+
+}
+
+.chinese:hover {
+    text-decoration: underline;
+}
+
+.chinese:hover + .chinese-tooltip {
+    visibility: visible;
+}
+
+
+
+
+
+
+/* Arabic Section */
+.Arabic {
+    position: absolute;
+    color:gray;
+    font-family: 'Times New Roman', Times, serif;
+    filter:grayscale(90%);
+    top:9.4%;
+    left:36%;
+    font-size: 1.1em;
+    text-decoration: none;
+    padding:0.1em
+}
+
+.Arabic-tooltip {
+    position: absolute;
+    background-color:black;
+    color:white;
+    top:26%;
+    left:37%;
+    z-index: 3;
+    font-family: 'Times New Roman', Times, serif;
+    border-radius:10%;
+    font-size: 1.8vmin;
+    padding:0.1em;
+    visibility: hidden;
+}
+
+.Arabic:hover {
+    text-decoration: underline;
+}
+
+.Arabic:hover + .Arabic-tooltip {
+    visibility: visible;
+}
+
+
+
+
+
+
+/* Portuguese Section */
+.portuguese  {
+    position: absolute;
+    color:gray;
+    font-family: 'Times New Roman', Times, serif;
+    filter:grayscale(90%);
+    top:9.4%;
+    left:39%;
+    font-size: 1.1em;
+    text-decoration: none;
+    padding:0.1em
+}
+
+.portuguese-tooltip {
+    position: absolute;
+    background-color:black;
+    color:white;
+    top:26%;
+    left:43%;
+    z-index: 3;
+    font-family: 'Times New Roman', Times, serif;
+    border-radius:10%;
+    font-size: 1.8vmin;
+    padding:0.1em;
+    visibility: hidden;
+
+}
+
+.portuguese:hover {
+    text-decoration: underline;
+}
+
+.portuguese:hover + .portuguese-tooltip {
+    visibility: visible;
+}
+
+
+
+
+/* Italy Section */
+
+.Italiano {
+    position: absolute;
+    color:gray;
+    font-family: 'Times New Roman', Times, serif;
+    filter:grayscale(90%);
+    top:9.4%;
+    left:48%;
+    font-size: 1.1em;
+    text-decoration: none;
+    padding:0.1em
+}
+
+.Italiano-tooltip {
+    position: absolute;
+    background-color:black;
+    color:white;
+    top:26%;
+    left:50%;
+    z-index: 3;
+    font-family: 'Times New Roman', Times, serif;
+    border-radius:10%;
+    font-size: 1.8vmin;
+    padding:0.1em;
+    visibility: hidden;
+
+}
+
+
+.Italiano:hover {
+    text-decoration: underline;
+}
+
+.Italiano:hover + .Italiano-tooltip {
+    visibility:visible
+}
+
+
+
+
+/* Korean */
+.korean {
+    position: absolute;
+    color:gray;
+    font-family: 'Times New Roman', Times, serif;
+    filter:grayscale(90%);
+    top:9.4%;
+    left:52%;
+    font-size: 1.1em;
+    text-decoration: none;
+    padding:0.1em
+}
+
+.korean-tooltip {
+    position: absolute;
+    background-color:black;
+    color:white;
+    top:26%;
+    left:53%;
+    z-index: 3;
+    font-family: 'Times New Roman', Times, serif;
+    border-radius:10%;
+    font-size: 1.8vmin;
+    padding:0.1em;
+    visibility: hidden;
+
+}
+
+.korean:hover {
+    text-decoration: underline;
+}
+
+.korean:hover + .korean-tooltip {
+    visibility: visible;
+}
+
+
+
+
+
+/* German Section */
+.dutch {
+    position: absolute;
+    color:gray;
+    font-family: 'Times New Roman', Times, serif;
+    filter:grayscale(90%);
+    top:9.4%;
+    left:56%;
+    font-size: 1.1em;
+    text-decoration: none;
+    padding:0.1em
+}
+
+.dutch-tooltip {
+    position: absolute;
+    background-color:black;
+    color:white;
+    top:26%;
+    left:57%;
+    z-index: 3;
+    font-family: 'Times New Roman', Times, serif;
+    border-radius:10%;
+    font-size: 1.8vmin;
+    padding:0.1em;
+    visibility: hidden;
+
+}
+
+.dutch:hover {
+    text-decoration: underline; 
+}
+
+.dutch:hover + .dutch-tooltip {
+    visibility: visible;
+}
+
+
+
+
+/*Hindi */
+.hindi {
+    position: absolute;
+    color:gray;
+    font-family: 'Times New Roman', Times, serif;
+    filter:grayscale(90%);
+    top:10%;
+    left:61%;
+    font-size: 1.1em;
+    text-decoration: none;
+    padding:0.1em
+}
+
+.hindi-tooltip {
+    position: absolute;
+    background-color:black;
+    color:white;
+    top:26%;
+    left:61%;
+    z-index: 3;
+    font-family: 'Times New Roman', Times, serif;
+    border-radius:10%;
+    font-size: 1.8vmin;
+    padding:0.1em;
+    visibility: hidden;
+}
+
+.hindi:hover {
+    text-decoration: underline;  
+}
+
+.hindi:hover + .hindi-tooltip {
+    visibility: visible;
+}
+
+
+
+
+/* japanese section */
+.japanese {
+    position: absolute;
+    color:gray;
+    font-family: 'Times New Roman', Times, serif;
+    filter:grayscale(90%);
+    top:9.4%;
+    left:64%;
+    font-size: 1.1em;
+    text-decoration: none;
+    padding:0.1em  
+}
+
+.japanese-tooltip {
+    position: absolute;
+    background-color:black;
+    color:white;
+    top:26%;
+    left:65%;
+    z-index: 3;
+    font-family: 'Times New Roman', Times, serif;
+    border-radius:10%;
+    font-size: 1.8vmin;
+    padding:0.1em;
+    visibility:hidden
+
+}
+
+
+.japanese:hover {
+    text-decoration: underline;  
+}
+
+.japanese:hover + .japanese-tooltip {
+    visibility:visible
+}
+
+
+
+
+/* grey cross section */
+.gray-cross {
+    position: absolute;
+    background-color:rgba(245, 245, 245, 0.698);
+    box-sizing:border-box;
+    height:3.4vh;
+    width:2.5vw;
+    top:9%;
+    left:68.3%;
+    border:2px solid lightgray;
+    padding:0.8em 1.2em;
+    border-radius:2px
+}
+
+
+.fa-close {
+ position: absolute;
+ color: black;
+ opacity: 0.7;
+ font-size: 19px;
+ top:6%;
+ left:33%;
+ font-weight: 900;
+ transform:rotate(134deg)
+}
+
+
+.gray-cross-tooltip {
+    position: absolute;
+    background-color:black;
+    color:white;
+    top:26%;
+    left:69%;
+    z-index: 3;
+    font-family: 'Times New Roman', Times, serif;
+    border-radius:10%;
+    font-size: 1.8vmin;
+    padding:0.1em;
+    visibility: hidden;
+
+}
+
+.gray-cross:hover {
+    background-color:whitesmoke;
+    cursor: pointer;
+}
+
+.gray-cross:hover + .gray-cross-tooltip {
+    visibility: visible;
+}
+
+.gray-cross:link {
+    outline: 1px solid lightblue
+}
+
+.footer-line {
+    position: relative;
+    color:whitesmoke;
+    width:80%;
+    top:28%;
+    left:14%;
+    font-size: 40px;
+}
+
+
+.sign-up {
+    position: absolute;
+    text-decoration: none;
+    color:gray;
+    font-family: 'Times New Roman', Times, serif;
+    filter:grayscale(90%);
+    top:31%;
+    left:9.2%;
+    font-size: 1.1em;
+    padding:0.1em
+
+}
+
+
+.sign-up-tooltip {
+    position: absolute;
+    background-color:black;
+    color:white;
+    top:42%;
+    left:10.8%;
+    z-index: 3;
+    font-family: 'Times New Roman', Times, serif;
+    border-radius:10%;
+    font-size: 1.8vmin;
+    padding:0.1em;
+    visibility: hidden;
+
+}
+
+.sign-up:hover {
+    text-decoration: underline;
+}
+
+
+.sign-up:hover + .sign-up-tooltip {
+    visibility: visible;
+}
+
+.log-in-facebook {
+    position: absolute;
+    text-decoration: none;
+    color:gray;
+    font-family: 'Times New Roman', Times, serif;
+    filter:grayscale(90%);
+    top:31%;
+    left:13.7%;
+    font-size: 1.1em;
+    padding:0.1em
+}
+
+.Log-In-Tooltip {
+    position: absolute;
+    background-color:black;
+    color:white;
+    top:42%;
+    left:14.4%;
+    z-index: 3;
+    font-family: 'Times New Roman', Times, serif;
+    border-radius:10%;
+    font-size: 1.8vmin;
+    padding:0.1em;
+    visibility: hidden;
+
+}
+
+
+.log-in-facebook:hover {
+    text-decoration: underline;
+}
+
+.log-in-facebook:hover + .Log-In-Tooltip {
+    visibility: visible;
+}
+
+
+.messenger {
+    position: absolute;
+    text-decoration: none;
+    color:gray;
+    font-family: 'Times New Roman', Times, serif;
+    filter:grayscale(90%);
+    top:31%;
+    left:17.4%;
+    font-size: 1.1em;
+    padding:0.1em
+
+}
+
+.messenger-tooltip {
+    position: absolute;
+    background-color:black;
+    color:white;
+    top:42%;
+    left:20%;
+    z-index: 3;
+    font-family: 'Times New Roman', Times, serif;
+    border-radius:10%;
+    font-size: 1.8vmin;
+    padding:0.1em;
+    visibility: hidden;
+
+}
+
+.messenger:hover {
+    text-decoration: underline;
+}
+
+.messenger:hover + .messenger-tooltip {
+    visibility:visible
+}
+
+
+.fb-lite {
+    position: absolute;
+    text-decoration: none;
+    color:gray;
+    font-family: 'Times New Roman', Times, serif;
+    filter:grayscale(90%);
+    top:31%;
+    left:23%;
+    font-size: 1.1em;
+    padding:0.1em
+
+}
+
+.fb-lite-tooltip {
+    position: absolute;
+    background-color:black;
+    color:white;
+    top:42%;
+    left:24%;
+    z-index: 3;
+    font-family: 'Times New Roman', Times, serif;
+    border-radius:10%;
+    font-size: 1.8vmin;
+    padding:0.1em;
+    visibility: hidden;
+
+}
+
+.fb-lite:hover {
+    text-decoration: underline;
+}
+
+.fb-lite:hover + .fb-lite-tooltip {
+    visibility: visible;
+}
+
+
+.video {
+    position: absolute;
+    text-decoration: none;
+    color:gray;
+    font-family: 'Times New Roman', Times, serif;
+    filter:grayscale(90%);
+    top:31%;
+    left:30%;
+    font-size: 1.1em;
+    padding:0.1em
+
+}
+
+.video-tooltip {
+    position: absolute;
+    background-color:black;
+    color:white;
+    top:42%;
+    left:32%;
+    z-index: 3;
+    font-family: 'Times New Roman', Times, serif;
+    border-radius:10%;
+    font-size: 1.8vmin;
+    padding:0.1em;
+    visibility:hidden
+
+}
+
+.video:hover {
+    text-decoration: underline;
+}
+
+.video:hover + .video-tooltip {
+    visibility: visible;
+}
+
+
+
+.places {
+    position: absolute;
+    text-decoration: none;
+    color:gray;
+    font-family: 'Times New Roman', Times, serif;
+    filter:grayscale(90%);
+    top:31%;
+    left:34%;
+    font-size: 1.1em;
+    padding:0.1em
+
+}
+
+.places-tooltip {
+    position: absolute;
+    background-color:black;
+    color:white;
+    top:42%;
+    left:36%;
+    z-index: 3;
+    font-family: 'Times New Roman', Times, serif;
+    border-radius:10%;
+    font-size: 1.8vmin;
+    padding:0.1em;
+    visibility: hidden;
+
+
+}
+
+
+.places:hover {
+    text-decoration: underline;
+}
+
+.places:hover + .places-tooltip {
+    visibility:visible
+}
+
+
+.games {
+    position: absolute;
+    text-decoration: none;
+    color:gray;
+    font-family: 'Times New Roman', Times, serif;
+    filter:grayscale(90%);
+    top:31%;
+    left:38%;
+    font-size: 1.1em;
+    padding:0.1em
+}
+
+.games-tooltip {
+    position: absolute;
+    background-color:black;
+    color:white;
+    top:42%;
+    left:40%;
+    z-index: 3;
+    font-family: 'Times New Roman', Times, serif;
+    border-radius:10%;
+    font-size: 1.8vmin;
+    padding:0.1em;
+    visibility: hidden;
+
+}
+
+.games:hover {
+    text-decoration: underline;
+}
+
+.games:hover + .games-tooltip {
+    visibility:visible
+}
+
+
+
+.marketplace {
+    position: absolute;
+    text-decoration: none;
+    color:gray;
+    font-family: 'Times New Roman', Times, serif;
+    filter:grayscale(90%);
+    top:31%;
+    left:42%;
+    font-size: 1.1em;
+    padding:0.1em
+
+}
+
+.marketplace-tooltip {
+    position: absolute;
+    background-color:black;
+    color:white;
+    top:42%;
+    left:45%;
+    z-index: 3;
+    font-family: 'Times New Roman', Times, serif;
+    border-radius:10%;
+    font-size: 1.8vmin;
+    padding:0.1em;
+    visibility: hidden;
+
+}
+
+.marketplace:hover {
+    text-decoration: underline;
+}
+
+.marketplace:hover + .marketplace-tooltip {
+    visibility: visible;
+}
+
+.meta-pay {
+    position: absolute;
+    text-decoration: none;
+    color:gray;
+    font-family: 'Times New Roman', Times, serif;
+    filter:grayscale(90%);
+    top:31%;
+    left:49%;
+    font-size: 1.1em;
+    padding:0.1em
+
+}
+
+.meta-pay-tooltip {
+    position: absolute;
+    background-color:black;
+    color:white;
+    top:42%;
+    left:50%;
+    z-index: 3;
+    font-family: 'Times New Roman', Times, serif;
+    border-radius:10%;
+    font-size: 1.8vmin;
+    padding:0.1em;
+    visibility: hidden;
+
+}
+
+.meta-pay:hover {
+    text-decoration: underline;
+}
+
+.meta-pay:hover + .meta-pay-tooltip {
+    visibility:visible
+}
+
+
+
+.meta-store {
+    position: absolute;
+    text-decoration: none;
+    color:gray;
+    font-family: 'Times New Roman', Times, serif;
+    filter:grayscale(90%);
+    top:31%;
+    left:54%;
+    font-size: 1.1em;
+    padding:0.1em
+}
+
+.metastore-tooltip {
+    position: absolute;
+    background-color:black;
+    color:white;
+    top:42%;
+    left:56%;
+    z-index: 3;
+    font-family: 'Times New Roman', Times, serif;
+    border-radius:10%;
+    font-size: 1.8vmin;
+    padding:0.1em;
+    visibility: hidden;
+    
+
+}
+
+.meta-store:hover {
+    text-decoration: underline;
+}
+
+
+.meta-store:hover + .metastore-tooltip  {
+   visibility: visible;
+}
+
+
+.meta-quest {
+    position: absolute;
+    text-decoration: none;
+    color:gray;
+    font-family: 'Times New Roman', Times, serif;
+    filter:grayscale(90%);
+    top:31%;
+    left:60%;
+    font-size: 1.1em;
+    padding:0.1em
+}
+
+
+.metaquest-tooltip {
+    position: absolute;
+    background-color:black;
+    color:white;
+    top:42%;
+    left:63%;
+    z-index: 3;
+    font-family: 'Times New Roman', Times, serif;
+    border-radius:10%;
+    font-size: 1.8vmin;
+    padding:0.1em;
+    visibility: hidden;
+}
+
+
+.meta-quest:hover {
+    text-decoration: underline;
+}
+
+.meta-quest:hover + .metaquest-tooltip {
+    visibility: visible;
+}
+
+.instagram {
+    position: absolute;
+    text-decoration: none;
+    color:gray;
+    font-family: 'Times New Roman', Times, serif;
+    filter:grayscale(90%);
+    top:31%;
+    left:66%;
+    font-size: 1.1em;
+    padding:0.1em
+
+}
+
+.instagram-tooltip {
+    position: absolute;
+    background-color:black;
+    color:white;
+    top:42%;
+    left:69%;
+    z-index: 3;
+    font-family: 'Times New Roman', Times, serif;
+    border-radius:10%;
+    font-size: 1.8vmin;
+    padding:0.1em;
+    visibility:hidden
+
+}
+
+.instagram:hover {
+    text-decoration: underline;
+}
+
+.instagram:hover + .instagram-tooltip {
+    visibility: visible;
+}
+
+
+.threads {
+    position: absolute;
+    text-decoration: none;
+    color:gray;
+    font-family: 'Times New Roman', Times, serif;
+    filter:grayscale(90%);
+    top:31%;
+    left:71%;
+    font-size: 1.1em;
+    padding:0.1em
+
+}
+
+.threads-tooltip {
+    position: absolute;
+    background-color:black;
+    color:white;
+    top:42%;
+    left:73%;
+    z-index: 3;
+    font-family: 'Times New Roman', Times, serif;
+    border-radius:10%;
+    font-size: 1.8vmin;
+    padding:0.1em;
+    visibility: hidden;
+
+}
+
+.threads:hover {
+    text-decoration: underline;
+}
+
+.threads:hover + .threads-tooltip {
+    visibility: visible;
+}
+
+
+.fundraisers {
+    position: absolute;
+    text-decoration: none;
+    color:gray;
+    font-family: 'Times New Roman', Times, serif;
+    filter:grayscale(90%);
+    top:45%;
+    left:9%;
+    font-size: 1.1em;
+    padding:0.1em
+}
+
+.fundraisers-tooltip {
+    position: absolute;
+    background-color:black;
+    color:white;
+    top:57%;
+    left:11%;
+    z-index: 3;
+    font-family: 'Times New Roman', Times, serif;
+    border-radius:10%;
+    font-size: 1.8vmin;
+    padding:0.1em;
+    visibility: hidden;
+
+}
+
+.fundraisers:hover {
+    text-decoration: underline;
+}
+
+.fundraisers:hover + .fundraisers-tooltip {
+    visibility: visible;
+}
+
+.services {
+    position: absolute;
+    text-decoration: none;
+    color:gray;
+    font-family: 'Times New Roman', Times, serif;
+    filter:grayscale(90%);
+    top:45%;
+    left:15%;
+    font-size: 1.1em;
+    padding:0.1em
+
+}
+
+.service-tooltip {
+    position: absolute;
+    background-color:black;
+    color:white;
+    top:57%;
+    left:17%;
+    z-index: 3;
+    font-family: 'Times New Roman', Times, serif;
+    border-radius:10%;
+    font-size: 1.8vmin;
+    padding:0.1em;
+    visibility: hidden;
+
+}
+
+
+
+.services:hover {
+    text-decoration: underline;
+}
+
+.services:hover + .service-tooltip {
+    visibility:visible
+}
+
+.vote {
+    position: absolute;
+    text-decoration: none;
+    color:gray;
+    font-family: 'Times New Roman', Times, serif;
+    filter:grayscale(90%);
+    top:45%;
+    left:20%;
+    font-size: 1.1em;
+    padding:0.1em
+
+}
+
+.vote-tooltip {
+    position: absolute;
+    background-color:black;
+    color:white;
+    top:57%;
+    left:23%;
+    z-index: 3;
+    font-family: 'Times New Roman', Times, serif;
+    border-radius:10%;
+    font-size: 1.8vmin;
+    padding:0.1em;
+    visibility: hidden;
+
+}
+
+
+
+.vote:hover {
+    text-decoration: underline;
+}
+
+.vote:hover + .vote-tooltip {
+    visibility: visible;
+}
+
+
+.privacy {
+    position: absolute;
+    text-decoration: none;
+    color:gray;
+    font-family: 'Times New Roman', Times, serif;
+    filter:grayscale(90%);
+    top:45%;
+    left:33%;
+    font-size: 1.1em;
+    padding:0.1em
+
+}
+
+.privacy-tooltip {
+    position: absolute;
+    background-color:black;
+    color:white;
+    top:57%;
+    left:36%;
+    z-index: 3;
+    font-family: 'Times New Roman', Times, serif;
+    border-radius:10%;
+    font-size: 1.8vmin;
+    padding:0.1em;
+    visibility: hidden;
+
+}
+
+.privacy:hover {
+    text-decoration: underline;
+}
+
+.privacy:hover  + .privacy-tooltip {
+    visibility: visible;
+}
+
+
+
+.privacy-center {
+    position: absolute;
+    text-decoration: none;
+    color:gray;
+    font-family: 'Times New Roman', Times, serif;
+    filter:grayscale(90%);
+    top:45%;
+    left:41%;
+    font-size: 1.1em;
+    padding:0.1em
+}
+
+.privacy-center-tooltip {
+    position: absolute;
+    background-color:black;
+    color:white;
+    top:57%;
+    left:45%;
+    z-index: 3;
+    font-family: 'Times New Roman', Times, serif;
+    border-radius:10%;
+    font-size: 1.8vmin;
+    padding:0.1em;
+    visibility: hidden;
+
+}
+
+.privacy-center:hover {
+    text-decoration: underline;
+}
+
+.privacy-center:hover + .privacy-center-tooltip {
+    visibility: visible;
+}
+
+
+.groups {
+    position: absolute;
+    text-decoration: none;
+    color:gray;
+    font-family: 'Times New Roman', Times, serif;
+    filter:grayscale(90%);
+    top:45%;
+    left:49%;
+    font-size: 1.1em;
+    padding:0.1em
+
+}
+
+.groups-tooltip {
+    position: absolute;
+    background-color:black;
+    color:white;
+    top:57%;
+    left:51%;
+    z-index: 3;
+    font-family: 'Times New Roman', Times, serif;
+    border-radius:10%;
+    font-size: 1.8vmin;
+    padding:0.1em;
+    visibility: hidden;
+
+}
+
+.groups:hover {
+    text-decoration: underline;
+}
+
+
+.groups:hover + .groups-tooltip {
+    visibility: visible
+}
+
+
+.about {
+    position: absolute;
+    text-decoration: none;
+    color:gray;
+    font-family: 'Times New Roman', Times, serif;
+    filter:grayscale(90%);
+    top:45%;
+    left:54%;
+    font-size: 1.1em;
+    padding:0.1em
+
+}
+
+.about-tooltip {
+    position: absolute;
+    background-color:black;
+    color:white;
+    top:57%;
+    left:56%;
+    z-index: 3;
+    font-family: 'Times New Roman', Times, serif;
+    border-radius:10%;
+    font-size: 1.8vmin;
+    padding:0.1em;
+    visibility: hidden;
+
+
+}
+
+.about:hover {
+    text-decoration: underline;
+}
+
+
+.about:hover + .about-tooltip {
+    visibility: visible;
+}
+
+
+.create-ad {
+    position: absolute;
+    text-decoration: none;
+    color:gray;
+    font-family: 'Times New Roman', Times, serif;
+    filter:grayscale(90%);
+    top:45%;
+    left:59%;
+    font-size: 1.1em;
+    padding:0.1em
+}
+
+.create-tooltip {
+    position: absolute;
+    background-color:black;
+    color:white;
+    top:57%;
+    left:62%;
+    z-index: 3;
+    font-family: 'Times New Roman', Times, serif;
+    border-radius:10%;
+    font-size: 1.8vmin;
+    padding:0.1em;
+    visibility: hidden;
+
+}
+
+
+.create-ad:hover {
+    text-decoration: underline;
+}
+
+.create-ad:hover + .create-tooltip {
+    visibility: visible;
+}
+
+
+
+
+.create-page-footer-text {
+    position: absolute;
+    text-decoration: none;
+    color:gray;
+    font-family: 'Times New Roman', Times, serif;
+    filter:grayscale(90%);
+    top:45%;
+    left:65%;
+    font-size: 1.1em;
+    padding:0.1em
+
+}
+
+.create-page-tooltip {
+    position: absolute;
+    background-color:black;
+    color:white;
+    top:57%;
+    left:67%;
+    z-index: 3;
+    font-family: 'Times New Roman', Times, serif;
+    border-radius:10%;
+    font-size: 1.8vmin;
+    padding:0.1em;
+    visibility: hidden;
+
+}
+
+
+.create-page-footer-text:hover {
+    text-decoration: underline;
+}
+
+.create-page-footer-text:hover + .create-page-tooltip {
+    visibility:visible
+}
+
+
+
+
+.developers {
+    position: absolute;
+    text-decoration: none;
+    color:gray;
+    font-family: 'Times New Roman', Times, serif;
+    filter:grayscale(90%);
+    top:45%;
+    left:72%;
+    font-size: 1.1em;
+    padding:0.1em
+
+}
+
+.developers-tooltip {
+    position: absolute;
+    background-color:black;
+    color:white;
+    top:57%;
+    left:74%;
+    z-index: 3;
+    font-family: 'Times New Roman', Times, serif;
+    border-radius:10%;
+    font-size: 1.8vmin;
+    padding:0.1em;
+    visibility: hidden;
+
+}
+
+.developers:hover {
+    text-decoration: underline;
+}
+
+.developers:hover + .developers-tooltip  {
+    visibility: visible;
+}
+
+
+.careers {
+    position: absolute;
+    text-decoration: none;
+    color:gray;
+    font-family: 'Times New Roman', Times, serif;
+    filter:grayscale(90%);
+    top:45%;
+    left:78%;
+    font-size: 1.1em;
+    padding:0.1em
+
+}
+
+.careers-tooltip {
+    position: absolute;
+    background-color:black;
+    color:white;
+    top:57%;
+    left:80%;
+    z-index: 3;
+    font-family: 'Times New Roman', Times, serif;
+    border-radius:10%;
+    font-size: 1.8vmin;
+    padding:0.1em;
+    visibility: hidden;
+
+}
+
+.careers:hover {
+    text-decoration: underline;
+}
+
+.careers:hover + .careers-tooltip {
+    visibility: visible;
+}
+
+
+.cookies {
+    position: absolute;
+    text-decoration: none;
+    color:gray;
+    font-family: 'Times New Roman', Times, serif;
+    filter:grayscale(90%);
+    top:58%;
+    left:9%;
+    font-size: 1.1em;
+    padding:0.1em
+
+}
+
+.cookies-tooltip {
+    position: absolute;
+    background-color:black;
+    color:white;
+    top:69%;
+    left:10%;
+    z-index: 3;
+    font-family: 'Times New Roman', Times, serif;
+    border-radius:10%;
+    font-size: 1.8vmin;
+    padding:0.1em;
+    visibility: hidden;
+
+}
+
+.cookies:hover {
+    text-decoration: underline;
+}
+
+.cookies:hover  + .cookies-tooltip  {
+    visibility: visible;
+}
+
+.ad-choices {
+    position: absolute;
+    text-decoration: none;
+    color:gray;
+    font-family: 'Times New Roman', Times, serif;
+    filter:grayscale(90%);
+    top:58%;
+    left:14%;
+    font-size: 1.1em;
+    padding:0.1em
+
+}
+
+.ad-choices-tooltip {
+    position: absolute;
+    background-color:black;
+    color:white;
+    top:69%;
+    left:15%;
+    z-index: 3;
+    font-family: 'Times New Roman', Times, serif;
+    border-radius:10%;
+    font-size: 1.8vmin;
+    padding:0.1em;
+    visibility:hidden
+
+}
+
+.ad-choices:hover {
+    text-decoration: underline; 
+}
+
+.ad-choices:hover + .ad-choices-tooltip  {
+    visibility:visible
+}
+
+
+.terms {
+    position: absolute;
+    text-decoration: none;
+    color:gray;
+    font-family: 'Times New Roman', Times, serif;
+    filter:grayscale(90%);
+    top:58%;
+    left:20%;
+    font-size: 1.1em;
+    padding:0.1em
+
+}
+
+.terms-tooltip {
+    position: absolute;
+    background-color:black;
+    color:white;
+    top:69%;
+    left:22%;
+    z-index: 3;
+    font-family: 'Times New Roman', Times, serif;
+    border-radius:10%;
+    font-size: 1.8vmin;
+    padding:0.1em;
+    visibility:hidden
+
+}
+
+.terms:hover {
+    text-decoration: underline;  
+}
+
+
+.terms:hover + .terms-tooltip {
+    visibility:visible
+}
+
+.help {
+    position: absolute;
+    text-decoration: none;
+    color:gray;
+    font-family: 'Times New Roman', Times, serif;
+    filter:grayscale(90%);
+    top:58%;
+    left:25%;
+    font-size: 1.1em;
+    padding:0.1em
+
+}
+
+.help:hover {
+    text-decoration: underline;   
+}
+
+
+.help-tooltip {
+    position: absolute;
+    background-color:black;
+    color:white;
+    top:69%;
+    left:26%;
+    z-index: 3;
+    font-family: 'Times New Roman', Times, serif;
+    border-radius:10%;
+    font-size: 1.8vmin;
+    padding:0.1em;
+    visibility: hidden;
+
+}
+
+.help:hover + .help-tooltip {
+    visibility:visible
+}
+
+.contact {
+    position: absolute;
+    text-decoration: none;
+    color:gray;
+    font-family: 'Times New Roman', Times, serif;
+    filter:grayscale(90%);
+    top:58%;
+    left:29%;
+    font-size: 1.1em;
+    padding:0.1em
+}
+
+
+
+.contact-tooltip {
+    position: absolute;
+    background-color:black;
+    color:white;
+    top:69%;
+    left:37%;
+    z-index: 3;
+    font-family: 'Times New Roman', Times, serif;
+    border-radius:10%;
+    font-size: 1.8vmin;
+    padding:0.1em;
+    visibility: hidden;
+
+
+}
+
+.contact:hover {
+    text-decoration: underline;  
+}
+
+
+.contact:hover + .contact-tooltip  {
+    visibility:visible
+}
+
+
+.meta {
+    position: absolute;
+    color:black;
+    font-family: 'Times New Roman', Times, serif;
+    filter:grayscale(90%);
+    top:70%;
+    left:9%;
+    font-size: 1.1em;
+    padding:0.1em
+
+}
+
